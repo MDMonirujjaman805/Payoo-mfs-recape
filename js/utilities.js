@@ -1,4 +1,3 @@
-//  console.log('utilities file added fast');
 //  function getInputFieldValueById (){
 //   // console.log('utilities file added');
 //   const addMoneyBtn = document.getElementById('amount-input-field').value;
@@ -7,5 +6,18 @@
 
 function getInputFieldValueById (id){
   const inputValue = document.getElementById(id).value;
-  return inputValue;
+  const inputValueParseFloat = parseFloat(inputValue);
+  return inputValueParseFloat;
+}
+
+
+function getMainBalanceAmount(id){
+  const mainBalance = document.getElementById(id).innerText;
+  const mainBalanceParseFloat = parseFloat(mainBalance);
+  return mainBalanceParseFloat;
+}
+
+function newBalance2(id){
+  const newBalance = document.getElementById(id);
+  return newBalance;
 }

@@ -15,7 +15,7 @@
       <div class="artboard artboard-demo phone-3">
         <div class="stats shadow">
           <div class="stat ">
-            <div class="stat-value">9400</div>
+            <div id="main-balance" class="stat-value">9400</div>
             <div class="stat-title">Balance Amount    </div>
              <div class="divider"></div>
               <!-- features start  -->
@@ -29,8 +29,8 @@
                </div>
                <div class="divider"></div>
               <!-- features end -->
-               <!-- Form start here  -->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+               <!-- add money Form start here  -->
+            <div class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -49,7 +49,29 @@
                 </div>
               </form>
             </div>
-               <!-- Form end here  -->
+               <!-- add money Form end here  -->
+
+                <!-- cash out form start here -->
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Cash Out Amount</span>
+                      </label>
+                      <input id="cash-out-amount-input-field" type="text" placeholder="Cash Out Amount" class="input input-bordered" autocomplete="off" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">PIN Number</span>
+                      </label>
+                      <input id="cash-out-pin-input-field" type="password" placeholder="PIN" class="input input-bordered" autocomplete="off" required />
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="cash-out-btn" class="btn btn-primary" type="submit">Cash Out</button>
+                    </div>
+                  </form>
+                </div>
+                <!-- cash out form end here -->
           </div>
         </div>
       </div>
@@ -57,7 +79,8 @@
   </div>
  </section>
   <script src="./js/utilities.js"></script>
-  <script src="./js/addmoney2.js"></script>
+  <script src="./js/addmoney3.js"></script>
+  <script src="./js/cashout.js"></script>
 </body>
 </html>
 
