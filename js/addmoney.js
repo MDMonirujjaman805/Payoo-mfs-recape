@@ -15,7 +15,7 @@ document.getElementById('add-money-btn').addEventListener('click',function (even
 
       const newAmount = cuterntAmount + mainAmount;
       document.getElementById('main-amount').innerText = newAmount;
-      
+
       alert('Add Money Successfull!')
   }else{
     alert('Try agin.')
