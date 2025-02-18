@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payoo-mfs-homepage </title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<section class="flex justify-center items-center">
+  <div class="mockup-phone">
+    <div class="camera"></div>
+    <div class="display">
+      <div class="artboard artboard-demo phone-1">
+        <!-- Account Balance -->
+        <div class="stats shadow">
+          <div class="stat">
+            <div id="main-amount" class="stat-value">9400</div>
+            <div class="stat-title">Account Balance</div>
+            
+          </div>
+        </div>
+        <div class="divider"></div>
+        <!-- Add Money From start-->
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <form class="card-body">
+            <div class="form-control">
+              <label  class="label">
+                <span class="label-text">Amount</span>
+              </label>
+              <input id="amount-input-field" type="text" placeholder="Amount" class="input input-bordered" required />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">PIN</span>
+              </label>
+              <input id="pin-input-field" type="password" placeholder="pin" class="input input-bordered" autocomplete="off" required />
+            </div>
+            <div class="form-control mt-6">
+              <button id="add-money-btn" class="btn btn-primary" type="submit" >Add Money </button>
+            </div>
+          </form>
+        </div>
+        <!-- Add Money From end-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="./js/addmoney.js"></script>
+</body>
+</html>
