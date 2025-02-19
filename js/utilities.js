@@ -21,3 +21,15 @@ function newBalance2(id){
   const newBalance = document.getElementById(id);
   return newBalance;
 }
+
+function showBtnSectionById (id){
+  // hide all section.....
+  document.getElementById('add-money-form').classList.add('hidden');
+  document.getElementById('cash-out-form').classList.add('hidden');
+  document.getElementById('send-money-form').classList.add('hidden');
+  document.getElementById('pay-bill-form').classList.add('hidden');
+  document.getElementById('savings-form').classList.add('hidden');
+  document.getElementById('lone-form').classList.add('hidden');
+  // show a section by id.......
+  document.getElementById(id).classList.remove('hidden');
+}

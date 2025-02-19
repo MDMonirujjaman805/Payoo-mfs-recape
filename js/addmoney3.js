@@ -3,8 +3,8 @@
 document.getElementById('add-money-btn').addEventListener('click',function(event){
   event.preventDefault();
 
-  const addMoney = getInputFieldValueById('amount-input-field');
-  const pinNumber = getInputFieldValueById('pin-input-field');
+  const addMoney = getInputFieldValueById('add-money-amount-input-field');
+  const pinNumber = getInputFieldValueById('add-money-pin-input-field');
 
   if(pinNumber === 1234){
     const mainBalance = getMainBalanceAmount('main-balance');

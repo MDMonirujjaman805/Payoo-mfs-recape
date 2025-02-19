@@ -17,70 +17,166 @@
           <div class="stat ">
             <div id="main-balance" class="stat-value">9400</div>
             <div class="stat-title">Balance Amount    </div>
+
              <div class="divider"></div>
+
               <!-- features start  -->
                <div class=" grid grid-cols-3 gap-2">
-                <button class="btn btn-lg">Add Money</button>
-                <button class="btn btn-lg">Cash Out</button>
-                <button class="btn btn-lg">Send Money</button>
-                <button class="btn btn-lg">Pay Bill</button>
-                <button class="btn btn-lg">Savings</button>
-                <button class="btn btn-lg">Lone</button>
+                <button id="add-money-show-btn" class="btn btn-lg">Add Money</button>
+                <button id="cash-out-show-btn" class="btn btn-lg">Cash Out</button>
+                <button id="send-money-show-btn" class="btn btn-lg">Send Money</button>
+                <button id="pay-bill-show-btn" class="btn btn-lg">Pay Bill</button>
+                <button id="savings-show-btn" class="btn btn-lg">Savings</button>
+                <button id="lone-show-btn" class="btn btn-lg">Lone</button>
                </div>
-               <div class="divider"></div>
-              <!-- features end -->
-               <!-- add money Form start here  -->
-            <div class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-              <form class="card-body">
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Amount</span>
-                  </label>
-                  <input id="amount-input-field" type="text" placeholder="Amount" class="input input-bordered" autocomplete="off" required />
-                </div>
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">PIN Number</span>
-                  </label>
-                  <input id="pin-input-field" type="password" placeholder="PIN" class="input input-bordered" autocomplete="off" required />
-                </div>
-                <div class="form-control mt-6">
-                  <button id="add-money-btn" class="btn btn-primary" type="submit">Add Money</button>
-                </div>
-              </form>
-            </div>
-               <!-- add money Form end here  -->
+               <!-- features end -->
 
-                <!-- cash out form start here -->
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+               <div class="divider"></div>
+
+               <!-- inside the all form design start  -->
+               <main>
+                <!-- add money Form start here  -->
+                 <div id="add-money-form" class="mt-5 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                   <form class="card-body">
                     <div class="form-control">
                       <label class="label">
-                        <span class="label-text">Cash Out Amount</span>
+                        <span class="label-text">Add Money Amount</span>
                       </label>
-                      <input id="cash-out-amount-input-field" type="text" placeholder="Cash Out Amount" class="input input-bordered" autocomplete="off" required />
+                      <input id="add-money-amount-input-field" type="text" placeholder="Add Money Amount" class="input input-bordered" autocomplete="off" required />
                     </div>
                     <div class="form-control">
                       <label class="label">
                         <span class="label-text">PIN Number</span>
                       </label>
-                      <input id="cash-out-pin-input-field" type="password" placeholder="PIN" class="input input-bordered" autocomplete="off" required />
+                      <input id="add-money-pin-input-field" type="password" placeholder="PIN" class="input input-bordered" autocomplete="off" required />
                     </div>
                     <div class="form-control mt-6">
-                      <button id="cash-out-btn" class="btn btn-primary" type="submit">Cash Out</button>
+                      <button id="add-money-btn" class="btn btn-primary" type="submit">Add Money</button>
                     </div>
-                  </form>
-                </div>
-                <!-- cash out form end here -->
+                   </form>
+                 </div>
+                <!-- add money Form end here  -->
+    
+               <!-- cash out form start here -->
+               <div id="cash-out-form" class="mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+                 <form class="card-body">
+                   <div class="form-control">
+                     <label class="label">
+                       <span class="label-text">Cash Out Amount</span>
+                     </label>
+                     <input id="cash-out-amount-input-field" type="text" placeholder="Cash Out Amount" class="input input-bordered" autocomplete="off" required />
+                   </div>
+                   <div class="form-control">
+                     <label class="label">
+                       <span class="label-text">PIN Number</span>
+                     </label>
+                     <input id="cash-out-pin-input-field" type="password" placeholder="PIN" class="input input-bordered" autocomplete="off" required />
+                   </div>
+                   <div class="form-control mt-6">
+                     <button id="cash-out-btn" class="btn btn-primary" type="submit">Cash Out</button>
+                   </div>
+                 </form>
+               </div>
+               <!-- cash out form end here -->
+
+               <!-- send money form start here -->
+               <div id="send-money-form" class="mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+                 <form class="card-body">
+                   <div class="form-control">
+                     <label class="label">
+                       <span class="label-text">Send Money Amount</span>
+                     </label>
+                     <input id="send-money-amount-input-field" type="text" placeholder="Send Money Amount" class="input input-bordered" autocomplete="off" required />
+                   </div>
+                   <div class="form-control">
+                     <label class="label">
+                       <span class="label-text">PIN Number</span>
+                     </label>
+                     <input id="send-money-pin-input-field" type="password" placeholder="PIN" class="input input-bordered" autocomplete="off" required />
+                   </div>
+                   <div class="form-control mt-6">
+                     <button id="send-money-btn" class="btn btn-primary" type="submit">Send Money</button>
+                   </div>
+                 </form>
+               </div>
+               <!-- send money form end here -->
+
+               <!-- pay Bill form start here -->
+               <div id="pay-bill-form" class="mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+                 <form class="card-body">
+                   <div class="form-control">
+                     <label class="label">
+                       <span class="label-text">Pay Bill Amount</span>
+                     </label>
+                     <input id="pay-bill-amount-input-field" type="text" placeholder="Pay Bill Amount" class="input input-bordered" autocomplete="off" required />
+                   </div>
+                   <div class="form-control">
+                     <label class="label">
+                       <span class="label-text">PIN Number</span>
+                     </label>
+                     <input id="pay-bill-pin-input-field" type="password" placeholder="PIN" class="input input-bordered" autocomplete="off" required />
+                   </div>
+                   <div class="form-control mt-6">
+                     <button id="pay-bill-btn" class="btn btn-primary" type="submit">Pay Bill</button>
+                   </div>
+                 </form>
+               </div>
+               <!-- pay Bill  form end here -->
+
+               <!-- Savings form start here -->
+               <div id="savings-form" class="mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+                 <form class="card-body">
+                   <div class="form-control">
+                     <label class="label">
+                       <span class="label-text">Savings Amount</span>
+                     </label>
+                     <input id="savings-amount-input-field" type="text" placeholder="Savings Amount" class="input input-bordered" autocomplete="off" required />
+                   </div>
+                   <div class="form-control">
+                     <label class="label">
+                       <span class="label-text">PIN Number</span>
+                     </label>
+                     <input id="savings-pin-input-field" type="password" placeholder="PIN" class="input input-bordered" autocomplete="off" required />
+                   </div>
+                   <div class="form-control mt-6">
+                     <button id="savings-btn" class="btn btn-primary" type="submit">Savings</button>
+                   </div>
+                 </form>
+               </div>
+               <!-- Savings  form end here -->
+
+               <!-- lone form start here -->
+               <div id="lone-form" class="mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+                 <form class="card-body">
+                   <div class="form-control">
+                     <label class="label">
+                       <span class="label-text">Lone Amount</span>
+                     </label>
+                     <input id="lone-amount-input-field" type="text" placeholder="Lone Amount" class="input input-bordered" autocomplete="off" required />
+                   </div>
+                   <div class="form-control">
+                     <label class="label">
+                       <span class="label-text">PIN Number</span>
+                     </label>
+                     <input id="lone-pin-input-field" type="password" placeholder="PIN" class="input input-bordered" autocomplete="off" required />
+                   </div>
+                   <div class="form-control mt-6">
+                     <button id="lone-btn" class="btn btn-primary" type="submit">Lone</button>
+                   </div>
+                 </form>
+               </div>
+               <!-- lone  form end here -->
+            </main>
+               <!-- inside the all form design end  -->
           </div>
         </div>
       </div>
     </div>
   </div>
  </section>
-  <script src="./js/utilities.js"></script>
-  <script src="./js/addmoney3.js"></script>
-  <script src="./js/cashout.js"></script>
+ <script src="./js/utilities.js"></script>
+  <script src="./js/feature.js"></script>
+  <script src="./js/features.js"></script>
 </body>
 </html>
 
