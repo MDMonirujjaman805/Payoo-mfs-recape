@@ -3,6 +3,10 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
   event.preventDefault();
   const addMoney = getInputFieldValueById('add-money-amount-input-field');
   const pin = getInputFieldValueById('add-money-pin-input-field');
+  if(isNaN(addMoney)){
+    alert('Plese Enter A Number');
+    return ;
+  }
   if(pin === 1234){
     const mainBalance = getMainBalanceAmount('main-balance');
     const newBalance = mainBalance + addMoney;
@@ -20,8 +24,16 @@ document.getElementById('cash-out-btn').addEventListener('click',function(event)
   event.preventDefault();
   const cashOut = getInputFieldValueById('cash-out-amount-input-field');
   const pin = getInputFieldValueById('cash-out-pin-input-field');
+if(isNaN(cashOut)){
+  alert('Plese Enter A Number');
+  return ;
+};
   if(pin === 1234){
     const mainBalance = getMainBalanceAmount('main-balance');
+    if(cashOut > mainBalance){
+      alert('You do not have enough money to pay bill.')
+      return ;
+    };
     const newBalance = mainBalance - cashOut;
     newBalance2('main-balance').innerText = newBalance;
     const p = document.createElement('p');
@@ -32,13 +44,22 @@ document.getElementById('cash-out-btn').addEventListener('click',function(event)
   }
 });  
 
+
 // send money feature.........
 document.getElementById('send-money-btn').addEventListener('click',function(event){
   event.preventDefault();
   const sendMoney = getInputFieldValueById('send-money-amount-input-field');
   const pin = getInputFieldValueById('send-money-pin-input-field');
+  if(isNaN(sendMoney)){
+    alert('Plese Enter A Number');
+    return ;
+  };
   if(pin === 1234){
     const mainBalance = getMainBalanceAmount('main-balance');
+    if(sendMoney > mainBalance){
+      alert('You do not have enough money to send money.')
+      return ;
+    };
     const newBalance = mainBalance - sendMoney;
     newBalance2('main-balance').innerText = newBalance;
     const p = document.createElement('p');
@@ -54,8 +75,16 @@ document.getElementById('pay-bill-btn').addEventListener('click',function(event)
   event.preventDefault();
   const payBill = getInputFieldValueById('pay-bill-amount-input-field');
   const pin = getInputFieldValueById('pay-bill-pin-input-field');
+  if(isNaN(payBill)){
+    alert('Plese Enter A Number');
+    return ;
+  };
   if(pin === 1234){
     const mainBalance = getMainBalanceAmount('main-balance');
+    if(payBill>mainBalance){
+      alert('You do not have enough money to pay bill.')
+      return ;
+    };
     const newBalance = mainBalance - payBill;
     newBalance2('main-balance').innerText = newBalance;
     const p = document.createElement('p');
@@ -71,6 +100,10 @@ document.getElementById('savings-btn').addEventListener('click',function(event){
   event.preventDefault();
   const savings = getInputFieldValueById('savings-amount-input-field');
   const pin = getInputFieldValueById('savings-pin-input-field');
+  if(isNaN(savings)){
+    alert('Plese Enter A Number');
+    return ;
+  }
   if(pin === 1234){
     const mainBalance = getMainBalanceAmount('main-balance');
     const newBalance = mainBalance + savings;
@@ -88,6 +121,10 @@ document.getElementById('lone-btn').addEventListener('click',function(event){
   event.preventDefault();
   const lone = getInputFieldValueById('lone-amount-input-field');
   const pin = getInputFieldValueById('lone-pin-input-field');
+  if(isNaN(lone)){
+    alert('Plese Enter A Number');
+    return ;
+  }
   if(pin === 1234){
     const mainBalance = getMainBalanceAmount('main-balance');
     const newBalance = mainBalance + lone;
