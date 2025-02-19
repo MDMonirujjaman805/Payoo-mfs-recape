@@ -27,3 +27,12 @@ document.getElementById('lone-show-btn')
 .addEventListener('click',function(){
   showBtnSectionById ('lone-form');
 })
+
+document.getElementById('home-btn')
+.addEventListener('click',function() {
+  showBtnSectionById('home-body-container');
+})
+document.getElementById('transactions-btn')
+.addEventListener('click',function() {
+  showBtnSectionById('transactions-container');
+})

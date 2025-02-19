@@ -12,11 +12,11 @@
   <div class="mockup-phone">
     <div class="camera"></div>
     <div class="display">
-      <div class="artboard artboard-demo phone-3">
+      <div class="artboard artboard-demo phone-4">
         <div class="stats shadow">
           <div class="stat ">
             <div id="main-balance" class="stat-value">9400</div>
-            <div class="stat-title">Balance Amount    </div>
+            <div class="stat-title">Balance Amount</div>
 
              <div class="divider"></div>
 
@@ -33,10 +33,35 @@
 
                <div class="divider"></div>
 
+               <!-- home and transactions history section star -->
+                <div id="home-tran-btn" class="">
+                  <div class="">
+                    <button id="home-btn" class="btn btn-primary">Home</button>
+                    <button id="transactions-btn" class="btn btn-primary"> Transactions History</button>
+                  </div>
+                  <div class="divider"></div>
+                    <div id="transactions-container" class="hidden">
+                      <h4 class=" text-start text-xl ">Transactions History</h4>
+                     </div>
+
+                     <!-- body style start  -->
+                     <div id="home-body-container" class="mt-2 card bg-primary text-primary-content">
+                       <div class="card-body">
+                         <h2 class="card-title">Card title!</h2>
+                         <p>If a dog chews shoes whose shoes does he choose?</p>
+                         <div class="card-actions justify-end">
+                           <button class="btn">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- body style end  -->
+                      
+                    </div>
+                  <!-- home and transactions history section end -->
                <!-- inside the all form design start  -->
                <main>
                 <!-- add money Form start here  -->
-                 <div id="add-money-form" class="mt-5 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                 <div id="add-money-form" class="hidden mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                   <form class="card-body">
                     <div class="form-control">
                       <label class="label">
@@ -58,7 +83,7 @@
                 <!-- add money Form end here  -->
     
                <!-- cash out form start here -->
-               <div id="cash-out-form" class="mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+               <div id="cash-out-form" class="hidden  mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
                  <form class="card-body">
                    <div class="form-control">
                      <label class="label">
@@ -80,7 +105,7 @@
                <!-- cash out form end here -->
 
                <!-- send money form start here -->
-               <div id="send-money-form" class="mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+               <div id="send-money-form" class="hidden mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
                  <form class="card-body">
                    <div class="form-control">
                      <label class="label">
@@ -102,7 +127,7 @@
                <!-- send money form end here -->
 
                <!-- pay Bill form start here -->
-               <div id="pay-bill-form" class="mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+               <div id="pay-bill-form" class="hidden mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
                  <form class="card-body">
                    <div class="form-control">
                      <label class="label">
@@ -124,7 +149,7 @@
                <!-- pay Bill  form end here -->
 
                <!-- Savings form start here -->
-               <div id="savings-form" class="mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+               <div id="savings-form" class="hidden mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
                  <form class="card-body">
                    <div class="form-control">
                      <label class="label">
@@ -146,7 +171,7 @@
                <!-- Savings  form end here -->
 
                <!-- lone form start here -->
-               <div id="lone-form" class="mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+               <div id="lone-form" class="hidden mt-2 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
                  <form class="card-body">
                    <div class="form-control">
                      <label class="label">
@@ -179,5 +204,3 @@
   <script src="./js/features.js"></script>
 </body>
 </html>
-
-
